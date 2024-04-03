@@ -13,7 +13,12 @@ body {
     letter-spacing: 0.02em;
     width: 496px;
 }
-    
+ h1,
+ h2,
+ h3,
+ p {
+    margin: 0;
+ }   
  a {
     text-decoration: none;
 }
