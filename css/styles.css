@@ -303,12 +303,47 @@ img {
  }
  .item-card {
     width: calc((100% - 48px) / 3);
- }
+    overflow: hidden;
+    position: relative;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
  .name-four {
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
  }
+ .overlay {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+.overlay-p {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    padding: 40px 32px;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    background-color: #4d5ae5;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(0);
+}
+.item-card:hover {
+transform: translateX(0);
+}
+.item-card:hover {
+box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+
 
      /* FOOTER */
 .page-footer {
